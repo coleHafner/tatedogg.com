@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Marquee from 'react-fast-marquee';
 
 export default function Home() {
   return (
@@ -31,9 +30,22 @@ export default function Home() {
             <img src="/tate-forest.jpg" alt="see tate walk" />
           </div>
         </div>
+        <Marquee className="scroller" autoFill={true} pauseOnHover={true} speed={90}>
+          <p>Squeaky Toys</p>
+          <p>Lots of Walks</p>
+          <p>Belly Rubs</p>
+          <p>Treats</p>
+          <p>Ear Scratches</p>
+          <p>Butt Sniffs</p>
+        </Marquee>
       </main>
 
-      <Footer />
+      <footer>
+        <p>Tate is a puppy dog from Beaverton, OR</p>
+        <p>
+          <a href="mailto:colehafner@gmail.com?subject=tatedogg.com inquiry">EMAIL</a>
+        </p>
+      </footer>
     </div>
   )
 }
