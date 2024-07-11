@@ -30,15 +30,16 @@ export default function Home() {
             <img src="/tate-forest.jpg" alt="see tate walk" />
           </div>
         </div>
-        <Marquee className="scroller" autoFill={true} pauseOnHover={true} speed={90}>
-          <p>Squeaky Toys</p>
-          <p>Lots of Walks</p>
-          <p>Belly Rubs</p>
-          <p>Treats</p>
-          <p>Ear Scratches</p>
-          <p>Butt Sniffs</p>
-        </Marquee>
       </main>
+
+      <Marquee className="scroller" pauseOnHover={true} speed={90}>
+        <p>Squeaky Toys</p>
+        <p>Lots of Walks</p>
+        <p>Belly Rubs</p>
+        <p>Treats</p>
+        <p>Ear Scratches</p>
+        <p>Butt Sniffs</p>
+      </Marquee>
 
       <footer>
         <p>Tate is a puppy dog from Beaverton, OR</p>
